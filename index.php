@@ -91,7 +91,7 @@
                         <h3>I, the citizen of India, having abiding faith in democracy, hereby pledge to uphold the democratic traditions of our country and the dignity of free, fair and peaceful elections, and to vote in every election fearlessly and without being influenced by consideration of religion, race, caste, community, language or any inducement.</h3>
                     </div>
 					
-                    <form class="form-horizontal" action="create.php" method="post">
+                    <form class="form-horizontal" action="index.php" method="post">
                       <div class="control-group <?php echo !empty($nameError)?'error':'';?>">
                         <label class="control-label">Name</label>
                         <div class="controls">
