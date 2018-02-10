@@ -76,15 +76,14 @@
 
 <body>
     <div class="container">
-     
-                <div class="span10 offset1">
-					<div class="row" align="justify">
-						<?php
-							$db = pg_connect("host=localhost port=5452 dbname=pledge_db user=postgres password=sgl");
-							$sql = "SELECT * FROM tbl_citizen";
-							$res = pg_query($sql); 
-							$totalcitizen = pg_num_rows($res);
-						?>
+        <div class="span10 offset1">
+		<div class="row" align="justify">
+		<?php
+		$db = pg_connect("host=ec2-54-247-101-191.eu-west-1.compute.amazonaws.com port=5432 dbname=d9no2cq66nv5bp user=kvgkdsuazgkshh password=a579bfcae930ab4c8644964cac36e655e50e8d077489cdb8c8dbe1747f251b6e");
+		$sql = "SELECT * FROM tbl_citizen";
+		$res = pg_query($sql); 
+		$totalcitizen = pg_num_rows($res);
+		?>
                         <h3><?php echo $totalcitizen;?> Citizens have taken the Pledge. Be the next one.</h3>
                     </div>
                     <div class="row" align="justify">
