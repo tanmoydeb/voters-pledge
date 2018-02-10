@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link   href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 
@@ -76,6 +79,7 @@
 
 <body>
     <div class="container">
+	     <div class="jumbotron">
         <div class="span10 offset1">
 		<div class="row" align="justify">
 		<?php
@@ -127,13 +131,14 @@
                             <?php endif;?>
                         </div>
                       </div>
+			    <BR>
                       <div class="form-actions">
                           <button type="submit" class="btn btn-success">Submit</button>
                           <a class="btn" href="index.php">Back</a><BR><?php echo !empty($msg)?$msg:'' ?>
 						</div>
                     </form>
                 </div>
-                 
+		     </div>
     </div> <!-- /container -->
   </body>
 </html>
