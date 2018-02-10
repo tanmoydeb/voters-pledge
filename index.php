@@ -52,7 +52,7 @@
          
         // insert data
         if ($valid) {
-			$db = pg_connect("host=ec2-54-247-101-191.eu-west-1.compute.amazonaws.com port=5452 dbname=d9no2cq66nv5bp user=kvgkdsuazgkshh password=a579bfcae930ab4c8644964cac36e655e50e8d077489cdb8c8dbe1747f251b6e");
+			$db = pg_connect("host=ec2-54-247-101-191.eu-west-1.compute.amazonaws.com port=5432 dbname=d9no2cq66nv5bp user=kvgkdsuazgkshh password=a579bfcae930ab4c8644964cac36e655e50e8d077489cdb8c8dbe1747f251b6e");
 			$query = "SELECT * FROM tbl_citizen WHERE epic="."'".$epic."'";
 			$result = pg_query($query); 
 			$count = pg_num_rows($result);
